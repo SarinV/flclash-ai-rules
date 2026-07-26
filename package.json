@@ -1,0 +1,13 @@
+{
+  "name": "flclash-ai-rules",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-rules.mjs",
+    "check": "node scripts/check-rules.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

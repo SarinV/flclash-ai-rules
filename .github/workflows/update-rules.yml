@@ -1,0 +1,54 @@
+name: Update AI proxy rules
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ai-proxy-rules
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate rules from validated upstreams
+        shell: bash
+        run: |
+          for attempt in 1 2 3; do
+            if node scripts/update-rules.mjs; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep $((attempt * 15))
+            fi
+          done
+          exit 1
+
+      - name: Validate generated rules
+        run: node scripts/check-rules.mjs
+
+      - name: Verify clean patch formatting
+        run: git diff --check
+
+      - name: Commit validated changes
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No rule changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rules metadata.json
+          git commit -m "Update generated AI rules"
+          git push
