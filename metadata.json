@@ -16,9 +16,9 @@
     },
     "openAiHelp": {
       "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
-      "liveExtractionUsed": false,
-      "extractedDomainCount": 0,
-      "sha256": null
+      "liveExtractionUsed": true,
+      "extractedDomainCount": 29,
+      "sha256": "01a32dd1bf1128103593e2a3b68adf08ee957b37af8759aa58a550df619da18f"
     },
     "openAiVoice": {
       "url": "https://openai.com/chatgpt-voice.json",
