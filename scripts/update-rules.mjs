@@ -3,6 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { extractCopilotSpecificRules } from "./copilot-rules.mjs";
+
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const RULES_DIR = path.join(ROOT, "rules");
 const METADATA_PATH = path.join(ROOT, "metadata.json");
@@ -155,41 +157,6 @@ function extractOpenAiHelpDomains(html) {
     return [];
   }
   return domains;
-}
-
-function globHostToRule(host) {
-  const normalized = host.toLowerCase();
-  if (normalized.startsWith("*.") && !normalized.slice(2).includes("*")) {
-    return `DOMAIN-SUFFIX,${normalized.slice(2)}`;
-  }
-  if (!normalized.includes("*")) return `DOMAIN,${normalized}`;
-  const expression = normalized
-    .split("*")
-    .map(part => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
-    .join(".*");
-  return `DOMAIN-REGEX,^${expression}$`;
-}
-
-function extractCopilotSpecificRules(markdown) {
-  const start = markdown.indexOf("public URLs");
-  const end = markdown.indexOf("voice features", start);
-  if (start < 0 || end <= start) {
-    throw new Error("GitHub Copilot public URL section not found");
-  }
-  const section = markdown.slice(start, end);
-  const matches = [...section.matchAll(/`https:\/\/([^`/]+)(?:\/[^`]*)?`/gi)];
-  const hosts = matches.map(match => match[1]);
-  return dedupeAndSort(
-    hosts
-      .filter(host =>
-        /copilot/i.test(host) ||
-        /^default\.exp-tas\.com$/i.test(host) ||
-        /^origin-tracker\.githubusercontent\.com$/i.test(host) ||
-        /^usagereports.*\.blob\.core\.windows\.net$/i.test(host)
-      )
-      .filter(host => !/SUBDOMAIN/i.test(host))
-      .map(globHostToRule),
-  );
 }
 
 function parseVoicePrefixes(text) {

@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --test",
     "update": "node scripts/update-rules.mjs",
     "check": "node scripts/check-rules.mjs"
   },
