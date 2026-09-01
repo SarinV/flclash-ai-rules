@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "heartbeatMonth": "2026-08",
+  "heartbeatMonth": "2026-09",
   "sources": {
     "metaOpenAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/openai.yaml",
@@ -8,7 +8,7 @@
     },
     "metaInternationalAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-chat-%21cn.yaml",
-      "sha256": "a3fb5abd7a46af09f03fe22ad3aaccb8f1b3d573a934dc10c90a1c8530ebbf6d"
+      "sha256": "4ecfac50131cc38010137c024234718d4ba8141bdc30afddcd83cfbbd81c6187"
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
