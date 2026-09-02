@@ -8,7 +8,7 @@
     },
     "metaInternationalAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-chat-%21cn.yaml",
-      "sha256": "4ecfac50131cc38010137c024234718d4ba8141bdc30afddcd83cfbbd81c6187"
+      "sha256": "e325258604325335db8bec4dcb108e21392d4a53a35fa070aba611c1c2e9f89e"
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
@@ -16,9 +16,9 @@
     },
     "openAiHelp": {
       "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
-      "liveExtractionUsed": false,
-      "extractedDomainCount": 0,
-      "sha256": null
+      "liveExtractionUsed": true,
+      "extractedDomainCount": 29,
+      "sha256": "262095d9c6eb324ff3d9049f255bd9d6f2bb44e5ffd4c5a07933469aa9e00ac8"
     },
     "openAiVoice": {
       "url": "https://openai.com/chatgpt-voice.json",
