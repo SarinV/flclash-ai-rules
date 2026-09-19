@@ -8,7 +8,7 @@
     },
     "metaInternationalAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-chat-%21cn.yaml",
-      "sha256": "696c1efbabf84d46cf07753d66defe7c124edad138da59288004da682ce2b631"
+      "sha256": "587a745963b76b4e5881506cb3cc04791c3ee40b55359182fcacc86c6c12ac8b"
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
