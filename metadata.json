@@ -12,7 +12,7 @@
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
-      "sha256": "8aea6c94763864426490927114c411c674c6afcc53f7e30520fe418b69ecea1f"
+      "sha256": "d3ecaa207e9267876a0d3ea2cfbcd4f823acbab4d83f1277f5c75c8703c4ebd2"
     },
     "openAiHelp": {
       "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
