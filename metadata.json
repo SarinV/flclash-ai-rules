@@ -4,11 +4,11 @@
   "sources": {
     "metaOpenAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/openai.yaml",
-      "sha256": "ea7ffb2db4d913f8cc67d3e7be19035155aba5247032592d8130b8f6552fdd56"
+      "sha256": "00d3c4dbe705255a32120bbc3e030bdc2ca9be7a2054805ab19d7a72adf75674"
     },
     "metaInternationalAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-chat-%21cn.yaml",
-      "sha256": "e7cae9eff91b428289a826a3c20667425280603e7e1c026ea3c5c845b67c318a"
+      "sha256": "a24112166c724eeb1d1076de3e5c3aaaef05dfbc0066c9da8e5a17db23d0916e"
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
@@ -27,7 +27,7 @@
     }
   },
   "outputs": {
-    "openAiRuleCount": 46,
+    "openAiRuleCount": 47,
     "copilotRuleCount": 18,
     "voicePrefixCount": 23
   }
