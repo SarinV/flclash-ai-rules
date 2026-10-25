@@ -22,13 +22,13 @@
     },
     "openAiVoice": {
       "url": "https://openai.com/chatgpt-voice.json",
-      "creationTime": "2026-03-26T20:12:45.451356+00:00",
-      "sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a"
+      "creationTime": "2026-10-25T19:25:06.552421+00:00",
+      "sha256": "000da4875ec5ffc62d165de5d2a305a22850693d319d0ecc03b5dc91b8515d8c"
     }
   },
   "outputs": {
     "openAiRuleCount": 48,
     "copilotRuleCount": 18,
-    "voicePrefixCount": 23
+    "voicePrefixCount": 150
   }
 }
