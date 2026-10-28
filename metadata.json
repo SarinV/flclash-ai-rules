@@ -8,7 +8,7 @@
     },
     "metaInternationalAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-chat-%21cn.yaml",
-      "sha256": "7581f4824187bff53805a61bbae35ef2ae742366d6c3222797c4072a52dec2f1"
+      "sha256": "3d9b5e399c0354a04a9b94302a8cd53595ad450f4a87a10e430b744af4ead8a1"
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
@@ -22,13 +22,13 @@
     },
     "openAiVoice": {
       "url": "https://openai.com/chatgpt-voice.json",
-      "creationTime": "2026-10-27T21:26:47.742042+00:00",
-      "sha256": "64f76d445bcad0e81d7b0190f0ed3866912e19b45a09aa4363e32c66c73da249"
+      "creationTime": "2026-10-27T22:28:21.782457+00:00",
+      "sha256": "d2923918cc4cd6bf382f379b1601af871fbff66d8fefb81d4457f2ccba1ec959"
     }
   },
   "outputs": {
     "openAiRuleCount": 48,
     "copilotRuleCount": 18,
-    "voicePrefixCount": 400
+    "voicePrefixCount": 402
   }
 }
