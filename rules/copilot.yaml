@@ -21,3 +21,4 @@ payload:
   - DOMAIN,copilotprodattachments.blob.core.windows.net
   - DOMAIN,default.exp-tas.com
   - DOMAIN,origin-tracker.githubusercontent.com
+  - DOMAIN,production-copilot-host-westus.webpubsub.azure.com

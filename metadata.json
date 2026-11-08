@@ -8,7 +8,7 @@
     },
     "metaInternationalAi": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-chat-%21cn.yaml",
-      "sha256": "95c84e9fec19f14b148ff378c7dee83791fcca5c6796b89dbadf0f05597fba20"
+      "sha256": "721278d82d750752902942e2f219b85625cdf85c4bdf2fbcba421c147d6e0c01"
     },
     "githubCopilot": {
       "url": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-allowlist-reference.md",
@@ -28,7 +28,7 @@
   },
   "outputs": {
     "openAiRuleCount": 48,
-    "copilotRuleCount": 18,
+    "copilotRuleCount": 19,
     "voicePrefixCount": 402
   }
 }
