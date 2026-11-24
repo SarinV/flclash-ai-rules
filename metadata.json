@@ -18,17 +18,17 @@
       "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
       "liveExtractionUsed": true,
       "extractedDomainCount": 31,
-      "sha256": "bfd927736647a1c9dde0738fbd27fab6e617bc10e823791ce26aad71b05b642c"
+      "sha256": "de77ffcff51a9f380d86984d23ae152a801f92ad5b0c9451eb6ae82497553fbe"
     },
     "openAiVoice": {
       "url": "https://openai.com/chatgpt-voice.json",
-      "creationTime": "2026-11-16T01:33:53.175979+00:00",
-      "sha256": "0852b8be430cb4ae4a68ff8c0169f05bcdc5ce2ab6649cb3fc02d057a50612e7"
+      "creationTime": "2026-11-24T19:31:46.967853+00:00",
+      "sha256": "b794a112a504d35587e671edfd6de3aae14e05f4f581c077cf1d33d3cf4fec91"
     }
   },
   "outputs": {
     "openAiRuleCount": 50,
     "copilotRuleCount": 19,
-    "voicePrefixCount": 411
+    "voicePrefixCount": 444
   }
 }
